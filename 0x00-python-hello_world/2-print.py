@@ -1,2 +1,2 @@
-# Prints use function print
+#!/usr/bin/python3
 print('"Programming is like a multilingual puzze\n')
