@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
-    if (sentenc == ''):
+    if (sentence == ''):
         tuple_length = (len(sentence), None)
     else:
         tuple_length = (len(sentence), sentence[0])
