@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    new_matrix = []
-    for i in matrix:
-        tmp_list = list(map(lambda x: x * x, i))
-        new_matrix.append(tmp_list)
-    return (new_matrix)
+    if matrix is not None:
+        new_matrix = []
+        for rows in matrix:
+            new_matrix.append(list(map(lambda x: x**2, rows)))
+        return (new_matrix)
+    return None
