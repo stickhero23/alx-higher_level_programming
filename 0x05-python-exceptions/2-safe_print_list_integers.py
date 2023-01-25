@@ -6,8 +6,8 @@ def safe_print_list_integers(my_list=[], x=0):
             if isinstance(my_list[i], int):
                 count += 1
                 print("{:d}".format(my_list[i]), end="")
-    except (TypeError, ValueError):
-        continue
+    except (TypeError, ValueError) as err:
+        print(err)
     else:
         print("")
         return count
