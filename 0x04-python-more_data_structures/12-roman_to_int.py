@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 def roman_to_int(roman_string):
     if roman_string is None or type(roman_string) is not str:
         return 0
@@ -14,4 +14,4 @@ def roman_to_int(roman_string):
         else:
             num -= dic[i]
     num += dic[roman_string[-1]
-    return num
+    return numi
