@@ -2,7 +2,7 @@
  Testing module 0-add_integer.py
 ===============================
 
-``add_integer(a, b=98)`` returns the addition of two arguments.  For numbers,
+"add_integer(a, b=98)" returns the addition of two arguments.  For numbers,
 a and b must be integers or floats, otherwise raise a TypeError exception.
 
 Numbers
