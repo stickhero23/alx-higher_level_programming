@@ -5,11 +5,13 @@ Module 101-nqueens
 import sys
 
 def solve_nqueens(n):
+
+
     def can_place(row, col):
         # Check if a queen can be placed in cell (row, col)
         for i in range(row):
             if board[i] == col or \
-               abs(board[i] - col) == abs(i - row):
+               abs(board[i] - col) == abs(row - i):
                 return False
         return True
 
@@ -28,11 +30,14 @@ def solve_nqueens(n):
     nqueens_helper(0)
     return result
 
+
 def print_solutions(solutions, n):
     for solution in solutions:
         print(" ".join(["." * i + "Q" + "." * (n-i-1) for i in solution]))
 
 if __name__ == '__main__':
+
+
     if len(sys.argv) != 2:
         print("Usage: nqueens N")
         sys.exit(1)
@@ -47,4 +52,3 @@ if __name__ == '__main__':
 
     solutions = solve_nqueens(n)
     print_solutions(solutions, n)
-
