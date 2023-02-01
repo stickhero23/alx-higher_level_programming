@@ -33,4 +33,4 @@ class Square:
     
     def my_print(self):
         """ prints in stdout the square using # """
-         print("\n".join(["#" * self.__size for rows in range(self.__size)]))
+        print("\n".join(["#" * self.__size for rows in range(self.__size)]))
