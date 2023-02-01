@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module 4-square
+Module 5-square
 Defines class Square with private size and public area
 Can access and update size
 """
@@ -30,3 +30,7 @@ class Square:
     def area(self):
         """ Calculate the area of square """
         return (self.__size * self.__size)
+    
+    def my_print(self):
+        """ prints in stdout the square using # """
+         print("\n".join(["#" * self.__size for rows in range(self.__size)]))
