@@ -54,14 +54,8 @@ class Square:
     def my_print(self):
         """ prints in stdout with # """
         if (self.size != 0):
-            for n in range(self.__position[1]):
-                print("")
-            for x in range(self.__size):
-                for y in range(self.__size + self.__position[0]):
-                    if (y < self.__position[0]):
-                        print(" ", end="")
-                    else:
-                        print("#", end="")
-                print("")
+             print("\n" * self.__position[1], end="")
+             print("\n".join([" " * self.__position[0] + "#" * self.__size
+                 for rows in range(self.__size)]))
         else:
             print("")
