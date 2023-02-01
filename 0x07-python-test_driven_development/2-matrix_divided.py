@@ -10,7 +10,7 @@ def matrix_divided(matrix, div):
     """
     divide all elements of a matrix
     """
-    msg = "matrix must be a matrix (list of lists) of integers or floats"
+    s = "matrix must be a matrix (list of lists) of integers or floats"
     if not (matrix or isinstance(matrix, list)):
         raise TypeError(s)
     if not (isinstance(div, int) or isinstance(div, float)):
