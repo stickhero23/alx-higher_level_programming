@@ -4,6 +4,4 @@
 
 def is_name_class(obj, a_class):
     """ returns True or False """
-    if (type(obj) == a_class):
-        return True
-    return False
+    return type(obj) == a_class
