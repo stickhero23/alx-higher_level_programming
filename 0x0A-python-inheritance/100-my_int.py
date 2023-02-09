@@ -4,6 +4,8 @@
 
 class MyInt(int):
     """ class MyInt that inherits from int """
+
+
     def __eq__(self, other):
         """ equal (=) inverted """
         return False
