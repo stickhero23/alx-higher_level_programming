@@ -9,6 +9,8 @@ or its subclass of
 
 
 def inherits_from(0bj, a_class):
+
+
     """
     use type() to get specific class
     use isinstance() to get class and any parent classes too
