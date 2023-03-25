@@ -1,4 +1,4 @@
 -- create the database hbtn_0c_0 in MySQL server
-DROP IF EXISTS;
-CREATE DATABASE hbtn_0c_0;
+-- If database exists, the script should fail
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
 
